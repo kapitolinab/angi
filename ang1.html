@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>all of us</title>
+        <style>
+        html, body {
+            cursor: url('cursor.png'), auto;
+        }
+        body {
+            font-family: Didot, serif;
+            background-image: url('wp21.png');
+            background-repeat: repeat-y;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        a:hover {
+            cursor: url('cursorh.png'), auto;
+        }
+        p {
+            color: rgb(145, 67, 83);
+            margin: 10px 0;
+        }
+        .circuit{
+            position:absolute;
+            opacity:0.5;
+            top: -10px;
+        }
+        .judge {
+            position: absolute;
+            top: 27%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 250px; 
+            height: auto;
+        }
+        .wof {
+            position: absolute;
+            top: 37%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+            width: 380px; 
+            height: auto;
+        }
+        .death {
+            position: absolute;
+            top: 36%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            width: 380px; 
+            height: auto;
+        }
+        .justice{
+            position: absolute;
+            top: 63%;
+            left: 41%;
+            transform: translate(-50%, -50%);
+            width: 380px; 
+            height: auto;
+        }
+        .devil{
+            position: absolute;
+            top: 63%;
+            left: 58%;
+            transform: translate(-50%, -50%);
+            width: 380px; 
+            height: auto;
+        }
+        .judge:hover {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+        .wof:hover {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+        .death:hover {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+        .justice:hover {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+        .devil:hover {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+        .screen{
+            position: absolute;
+            height: 240px;
+            width: 240px;
+            top: 120px;
+            left: 150px;
+            transform: rotate(15deg);
+        }
+        .screent{
+            position: absolute;
+            height: 240px;
+            width: 240px;
+            bottom: 120px;
+            right: 150px;
+            transform: rotate(-345deg);
+        }
+        .screenpink{
+            position: absolute;
+            height: 170px;
+            width: 170px;
+            bottom: 620px;
+            right: 187px;
+            transform: rotate(-15deg);
+        }
+        .screenpink2{
+            position: absolute;
+            height: 170px;
+            width: 170px;
+            bottom: 128px;
+            left: 183px;
+            transform: rotate(345deg);
+        }
+        .wires {
+            position: absolute;
+            bottom: -10px;
+        }
+        .monitor{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            pointer-events: none;
+        }
+        .monitor2{
+            position: absolute;
+            height: 230px;
+            width: 230px;
+            pointer-events: none;
+        }
+        .top-left {
+            top: 100px;
+            left: 120px;
+            transform: rotate(15deg);
+        }
+        .top-right {
+            top: 100px;
+            right: 150px;
+            transform: rotate(-15deg);
+        }
+        .bottom-left {
+            bottom: 100px;
+            left: 150px;
+            transform: rotate(345deg);
+        }
+        .bottom-right {
+            bottom: 100px;
+            right: 120px;
+            transform: rotate(-345deg);
+        }
+        </style>
+   </head>
+   <body>
+    <img src="circ2.png" class="circuit" style="height:900px;width:auto;left:28%;transform:rotate(45deg);">
+    <img src="12.png" class="wires">
+    <a href="ccr.html"><img src="screen.png" class="screen" id="hoverscreen"/></a>
+    <a href="domains.html"><img src="screen.png" class="screent" id="hoverscreen2"/></a>
+    <a href="ny.html"><img src="screen3.png" class="screenpink" id="hoverscreen3"/></a>
+    <a href="ny.html"><img src="screen3.png" class="screenpink2" id="hoverscreen4"/></a>
+    <img src="mon1.png" class="monitor top-left">
+    <img src="mon1.png" class="monitor2 top-right">
+    <img src="mon1.png" class="monitor2 bottom-left">
+    <img src="mon1.png" class="monitor bottom-right">
+    <a href="ny.html"><img src="one.png" class="judge"></a>
+    <a href="rota.html"><img src="two.png" class="wof"></a>
+    <a href="curio.html"><img src="three.png" class="death"></a>
+    <a href="michael.html"><img src="four.png" class="justice"></a>
+    <a href="valentine.html"><img src="five.png" class="devil"></a>
+
+
+    <script>
+    const img = document.getElementById('hoverscreen');
+    if (img) {
+    img.addEventListener('mouseenter', () => {
+    console.log('Hovering over image');
+    img.src = 'screen1.png';
+    });
+    img.addEventListener('mouseleave', () => {
+    console.log('Stopped hovering');
+    img.src = 'screen.png';
+    });
+    } else {
+    console.error('Image element not found');
+    }
+    </script>
+
+    <script>
+    const img2 = document.getElementById('hoverscreen2');
+    if (img2) {
+    img2.addEventListener('mouseenter', () => {
+        console.log('Hovering over image 2');
+        img2.src = 'screend.png';
+    });
+    img2.addEventListener('mouseleave', () => {
+        console.log('Stopped hovering over image 2');
+        img2.src = 'screen.png';
+    });
+    } else {
+    console.error('Element with ID "hoverscreen2" not found');
+    }
+    </script>
+
+    <script>
+    const img3 = document.getElementById('hoverscreen3');
+    if (img3) {
+    img3.addEventListener('mouseenter', () => {
+        console.log('if u reading this haha');
+        img3.src = 'screen2.png';
+    });
+    img3.addEventListener('mouseleave', () => {
+        console.log('this is so annoying to do');
+        img3.src = 'screen3.png';
+    });
+    } else {
+    console.error('Element with ID "hoverscreen2" not found');
+    }
+    </script>
+
+    <script>
+    const img4 = document.getElementById('hoverscreen4');
+    if (img4) {
+    img4.addEventListener('mouseenter', () => {
+        console.log('im dead');
+        img4.src = 'screen2.png';
+    });
+    img4.addEventListener('mouseleave', () => {
+        console.log('haaaaaaaaa');
+        img4.src = 'screen3.png';
+    });
+    } else {
+    console.error('Element with ID "hoverscreen2" not found');
+    }
+    </script>
+
+
+   </body>
+</html>

@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>check this out</title>
+<title>from thy ashes</title>
 <style>
 body {
-    background-image: url('wp2.png');
+    font-family: Didot, serif;
+    background-image: url('circles.jpg');
     background-repeat: repeat-y;
     background-size: cover;
     margin: 0;
@@ -16,21 +17,37 @@ body {
 html, body {
     cursor: url('cursor.png'), auto;
 }
-.center-image {
-    display: block;
-    margin: 0, auto;
-    padding-top: 155px; 
-}
-a {
-    display: inline-block; 
-}
-.center-image:hover {
-    transform: scale(1.05);
+a:hover {
     cursor: url('cursorh.png'), auto;
+}
+.overlay-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 28px;
+    color: rgb(255, 210, 219);
+    background-color: rgba(39, 17, 17, 0.808); 
+    padding: 15px;
+    width: 90%;
+}
+.baby{
+    position:absolute;
+    left: 40%;
+    width: 350px;
+    height: auto;
 }
 </style>
 </head>
+<img src="baby.png" class="baby">
 <body>
-<a href="ang1.html"><img src="fountain1.png" alt="err" class="center-image"></a>
+    <div class="overlay-text">
+        There's no use for many items that have been thrown out into the garbage, is there? Well, you can always recycle them for a different purpose - a living being, for example.<br>
+        Materials, minions of Curio, gather up garbage from all over the land and bring it back to their master. What isn't used by him for life form creation can be used to create intricate art pieces by the very few humans that Curio keeps by his side.<br>
+        But citizens of the Death Domain, human and creature alike, all live in fear of being picked apart by their ruler - his nimble fingers are always eager to destroy and recreate. Nobody is safe from that.<br>
+        So Materials aren't taught to value life, instead they are supposed to put the miracle of creation above their pathetic existance. Only most prominent and valuable ones even have names.<br>
+        When injured, they can replenish themselves by consuming the same substance they are made up of - cannibalism, but rather adorable!
+    </div>
 </body>
 </html>
